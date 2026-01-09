@@ -944,14 +944,19 @@ const generateContextInfo = () => {
 export const patchMessageForMdIfRequired = (message: proto.IMessage) => {
   const requiresPatch = !!(
     message.buttonsMessage ||
+    message.templateMessage ||
     message.listMessage ||
     message.interactiveMessage
   );
 
   if (requiresPatch) {
     message = {
-      documentWithCaptionMessage: {
+      viewOnceMessage: {
         message: {
+          messageContextInfo: {
+            deviceListMetadataVersion: 2,
+            deviceListMetadata: {}
+          },
           ...message
         }
       }

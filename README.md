@@ -27,6 +27,17 @@ Thank you to [@pokearaujo](https://github.com/pokearaujo/multidevice) for writin
 
 Baileys is type-safe, extensible and simple to use. If you require more functionality than provided, it's super easy to write an extension. More on this [here](#WritingCustomFunctionality).
 
+## Interactive Messages
+
+This library supports various types of interactive messages, ensuring compatibility with WhatsApp Web and Multi-Device.
+
+- **Plain Buttons:** Simple buttons for quick options.
+- **Template Buttons:** Buttons with actions like URLs, Phone Calls, and Quick Replies.
+- **List Messages:** Sections and rows for selecting items from a list.
+- **Native Flow:** Advanced interactive messages with custom layouts and logic.
+
+For detailed usage instructions and payloads, check the [Interactive Messages Documentation](docs/INTERACTIVE_MESSAGES.md).
+
 ## Example
 
 Do check out & run [example.ts](https://github.com/canove/whaileys/blob/master/Example/example.ts) to see an example usage of the library.
@@ -36,6 +47,8 @@ To run the example script, download or clone the repo and then type the followin
 1. `cd path/to/Baileys`
 2. `yarn`
 3. `yarn example`
+
+For interactive messages specifically, check [Example/interactive.ts](Example/interactive.ts).
 
 ## Install
 
