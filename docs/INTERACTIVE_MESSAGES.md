@@ -138,7 +138,7 @@ O formato mais moderno e flexível, suportando fluxos complexos e layouts nativo
 ### Envio
 
 ```typescript
-const { proto } = require('@whiskeysockets/baileys'); // ou seu import local
+const { proto } = require('whaileys'); // ou seu import local
 
 const msg = {
     interactiveMessage: {
